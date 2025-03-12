@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
 }
@@ -10,16 +14,13 @@ body {
   border: 2px solid black;
   width: 270px;
   margin: 20px auto;
-}
-
-* {
-  box-sizing: border-box;
+  padding: 0 7px;
 }
 
 header h1 {
   text-align: center;
   margin: -4px 0;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.15px
 }
 
 p {
@@ -54,14 +55,15 @@ p {
   font-size: 0.85rem;
 }
 
-.calories-info h2 {
-  margin: 0;
-}
 
 .calories-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
 }
 
 .left-container p {
@@ -71,13 +73,12 @@ p {
 }
 
 .calories-info span {
+  margin: -7px -2px;
   font-size: 2.4em;
   font-weight: 700;
-  margin: -7px -2px;
 }
 
 .right {
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -85,10 +86,15 @@ p {
   margin-left: 1em;
 }
 
-.daily-value p {
+.double-indent {
+  margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
   border-bottom: 1px solid #888989;
 }
 
-.no-divider {
-  border-bottom: none;
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
 }
